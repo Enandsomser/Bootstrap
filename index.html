@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sve">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Länk till de två CSS filerna jag använder för att få det att se och fungera bra-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>BS4-1</title>
+</head>
+<body>
+    <!--Lägger in allt i en container så att det blir enklare att lägga till CSS-->
+    <div class="container">
+        <!--h1 = titel-->
+        <h1>Termer och begrepp</h1>
+        <!--h2 = undertitel-->
+        <h2>Element</h2>
+        <!--p = paragraf-->
+        <p>Element behövs när man skapar en html sida. De har alltid en starttagg och oftast även en sluttagg, 
+            och däremellan ett innehåll.
+        </p>
+        <h2>HTML</h2>
+        <p>HTML är en förkortning av Hyper Text Markup Language och är det språk som används när man skapar sidor 
+            på nätet. Det är inte ett programmeringsspråk, utan ett märkspråk. Ett programmeringsspråk utför kommandon, 
+            men ett märkspråk används för att märka upp syftet med olika texter. Vad som är rubrik, underrubrik eller 
+            brödtext till exempel.
+        </p>
+        <h2>Responsive</h2>
+        <p>En websida som är responsive förändrar sig (responderar/svarar) till den skärm du använder. Så layouten beror på
+            den funktion din webläsare har, om du tittar från till exempel en dator, ipad eller en android. En sida som inte är responsive
+            däremot har alltid samma layout vilket får till följd att den kan fungera dåligt och vara svårläst om du 
+            sitter vid en annan skärmtyp än vad sidan utvecklats för.
+        </p>
+        <h2>ID</h2>
+        <p>Ett ID är ett attribut som används för att identifiera ett element, och det måste vara unikt. Man kan 
+            använda ID för att skilja huvudmeny från sidomenyer, eller för att skapa ett "ankare" som när man klickar 
+            på det tar dig till det elementet.
+        </p>
+        <h2>Class</h2>
+        <p>Class är ett attribut, som till skillnad mot ID som är unikt eftersom identifierar ett element istället grupperar (klassificerar) 
+            element. Det innebär att det kan finnas flera element av samma Class på samma sida. Det kan vara en en klass som 
+            anger att texten ska bli rödmarkerad, och det kan natuligtvis finnas rödmarkerad text på flera ställen i texten. 
+        </p>
+        <h2>Meta</h2>
+        <p>Meta är ett prefix som betyder gömd. Meta är delen som inte är synligt, men som påverkar egenskaperna. De stora sökmotorerna
+            använder sig av sökorden som finns här för att hitta just den sidan. En annan typ av Meta är headerinformation som inte visas, men
+            används för kommunikation mellan webläsaren och webservern redan innan htmlkoden läses in.
+        </p>
+        <h2>http</h2>
+        <p>http står för Hyper Text Transfer Protocol och är ett kommunikationsprotokoll för som används för att ladda websidor på
+            internet via www (World Wide Web). Hypertext är en text som har så kallade hyperlänkar som kopplar ihop en text med en text
+            på en annan sida. Ett vanligt fenomen på till exempel Wikipedia, där ett ord kan ha en länkning som tar dig till en annan sida som
+            förklarar det ordet. Ordet Transfer syftar på att det handlar om att skicka och ta emot information. För att kommunikationen ska fungera 
+            krävs regler, och Protocol syftar just på det sätt som man kommit överrens att kommunicera. Http används av webläsaren när den ska hämta information från en 
+            webserver. Det som händer är att webläsaren (klienten) skickar någon form av förfrågning till webservern.
+            <!--Sätter in en ol lista för att det ska se bättre ut-->
+            <ol>#GET - klienten ber servern hämta en fil</ol>
+            <ol>#HEAD - klienten ber servern om information om innehåll utan att skicka över det</ol>
+            <ol>#POST- klienten ber servern att lagra viss information</ol>
+            <ol>#PUT - klienten laddar upp en fil på servern</ol>
+            <ol>#DELETE - klienten ber servern ta bort en fil</ol>
+            <ol>#TRACE - klienten ber servern skicka tillbaks en förfrågan, används för att kontrollera om tredje part har manipulerat data</ol>
+            <ol>#OPTIONS - visar en lista över samtliga http kommandon</ol>
+            <ol>#CONNECT - används för att omvandla frågan till en TCP/IP tunnel, tex för att möjliggöra SSL/HTTPS</ol>
+            <ol>#PATCH - sätt att delvis byta ut innehållet i en fil på servern</ol>
+         </p>
+        <h2>https</h2>
+        <p>Idag är det fler och fler sidor som använder https istället för http, vilket beror på att https är säkrare.
+            Att det är säkrare beror på att man använder sig av kryptering av överföring via SSL och det därmed är svårare för tredje
+            part att komma åt den. Dessutom rankar Google sidor som använder https högre, vilket ytterligare motiverar att man ska använda sig av https
+            på sin webplats. Sidor som använder sig av https har ett hänglås i adressfältet i webbläsaren. 
+        </p>
+        <h2>compressed data</h2>
+        <p>Compressed data kan man använda sig av för att spara lagringsutrymme eller för snabbare överföring av information. Detta eftersom det innebär
+            att datan komprimeras på så sätt att färre informationsbärande enheter (oftast bitar) behövs
+        </p>
+        <h2>CDN</h2>
+        <p>CDN står för Content Delivery Network och är en central del i hur ljud, bild och liknande tjänster levreras till 
+            användare på internet. Många tjänster på internet är bandbreddsintensiva både gällande tid och volym. CDN-tekniken gör att 
+            belastningen sprids ut över flera servrar så att tjänsten kan leveras med hög prestanda och tillgänglighet. Att använda sig av CDN är det snabbaste
+            sättet att komma igång med Boostrap.
+        </p>
+        <h2>local bootstrap</h2>
+        <p>Ett alternativ till att använda sig av CDN är att ladda ner en kopia av Bootstrap lokalt till ditt projekt. 
+
+        </p>
+        <h2>JQuery</h2>
+        <p>JQuery är världens mest använda Java Script Biblilotek, utformat för att göra det enklare att html, css och DOM modifiera element på hemsidan 
+            och hantera händelser. Det stödjer också plugins, varav många är gratis att ladda ner och använda.   
+        </p>
+        <h2>Flexbox</h2>
+        <p>Flexbox är ett sätt att skapa layouten för webbsidor. Flexboxen förenklar att få raka kolumner och liknande problem
+            vid skapandet av sidan. Några begrepp att hålla reda på för att förstå Flexbox.
+            <ol>#Flexbehållare - Föräldraelement vari allt som ska hanteras av Flexboxen placeras</ol>
+            <ol>#Flexelement - de underelement som placeras i Flexbehållaren</ol>
+            <ol>#Flexaxel - anger i vilken riktning elementen ska placeras, antingen rad eller kolumn. Från vänster till höger</ol>
+            <ol>#Omvända fleraxlar - Används när man istället vill gå från höger till vänster</ol>
+            <ol>#Korsaxel - En axel som är förskjuten 90 grader från flexaxeln, dvs är fleraxeln horisontell är korsaxeln vågrät</ol>
+        </p>
+        <h2>Grid</h2>
+        <p>Ett tänkt rutnät på en hemsida som används för att styra vilkor och regler när man konstuerar en websid kallas Grid. CSS Grid 
+            är ett alternativ till Flexbox, men kräver mer kod än Flexbox. CSS Grid är bättre att använda sig av när man vill skapa 
+            tvådimensionella element, dvs som är både en rad och en kolumn.  
+        </p>
+        <h2>Code snippets</h2>
+        <p>Code snippets är små bitar av återanvändbar kod som man kan använda sig av när man skapar en sida genom att anropa blocket på ett eller annat sätt 
+        </p>
+    </div>
+</body>
+</html>
